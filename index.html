@@ -1,98 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Your Name | DevOps Engineer</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#f4f4f4;
+background:#0f172a;
+color:white;
+line-height:1.6;
 }
 
 header{
-    background:#007bff;
-    color:white;
-    text-align:center;
-    padding:40px;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin:20px 0;
+font-size:1.2rem;
+color:#cbd5e1;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:#000;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
 
 section{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    margin-top:20px;
-    padding:20px;
-    border-radius:10px;
+padding:80px 10%;
 }
 
-h2{
-    color:#007bff;
+.section-title{
+font-size:2rem;
+margin-bottom:30px;
+color:#38bdf8;
 }
 
-.project{
-    border:1px solid #ddd;
-    padding:10px;
-    margin-top:10px;
-    border-radius:5px;
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+}
+
+.card h3{
+margin-bottom:10px;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
+text-align:center;
+padding:30px;
+background:#020617;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+display:block;
+margin:10px 0;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-<h1>Anand Janke</h1>
-<p>Student | DevOps engineer</p>
+<div class="hero">
+<h1>Hi, I'm <span>Your Name</span></h1>
+<p>Aspiring DevOps Engineer | Cloud Enthusiast | Linux Administrator</p>
+<a href="#projects" class="btn">View Projects</a>
+</div>
 </header>
 
 <section>
-<h2>About Me</h2>
+<h2 class="section-title">About Me</h2>
 <p>
-Hello! I am a student and I am learning Devops,Devsecop development.
+I am a passionate DevOps Engineer focused on automation,
+CI/CD pipelines, Docker, Kubernetes, Linux and Cloud
+technologies. I enjoy building scalable and reliable
+infrastructure solutions.
 </p>
 </section>
 
 <section>
-<h2>Skills</h2>
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+<div class="skill">Linux</div>
+<div class="skill">Docker</div>
+<div class="skill">Kubernetes</div>
+<div class="skill">AWS</div>
+<div class="skill">Terraform</div>
+<div class="skill">Jenkins</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Ansible</div>
+<div class="skill">Shell Scripting</div>
+<div class="skill">Python</div>
+<div class="skill">CI/CD</div>
+<div class="skill">Monitoring</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>CI/CD Pipeline with Jenkins</h3>
+<p>
+Created automated build, test and deployment pipeline
+using Jenkins and Docker.
+</p>
+</div>
+
+<div class="card">
+<h3>Kubernetes Cluster Deployment</h3>
+<p>
+Deployed scalable applications using Kubernetes and Helm.
+</p>
+</div>
+
+<div class="card">
+<h3>AWS Infrastructure Automation</h3>
+<p>
+Provisioned EC2, VPC and S3 resources using Terraform.
+</p>
+</div>
+
+<div class="card">
+<h3>Monitoring Stack</h3>
+<p>
+Implemented Prometheus and Grafana for infrastructure
+monitoring and alerting.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Certifications</h2>
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
+<li>AWS Cloud Practitioner</li>
+<li>Docker Essentials</li>
+<li>Kubernetes Fundamentals</li>
+<li>Linux Administration</li>
 </ul>
 </section>
 
 <section>
-<h2>Projects</h2>
+<h2 class="section-title">Contact</h2>
 
-<div class="project">
-<h3>Calculator App</h3>
-<p>Simple calculator using HTML CSS and JavaScript.</p>
+<div class="contact">
+<a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+<a href="#">GitHub Profile</a>
+<a href="#">LinkedIn Profile</a>
 </div>
-
-<div class="project">
-<h3>Portfolio Website</h3>
-<p>My personal portfolio website.</p>
-</div>
-
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>Email: anandzanke@gmail.com</p>
 </section>
 
 <footer>
-© 2026 Your Name
+© 2026 Your Name | DevOps Engineer
 </footer>
 
 </body>
