@@ -21,6 +21,43 @@ background:#0f172a;
 color:white;
 line-height:1.6;
 }
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
 
 header{
 height:100vh;
@@ -176,6 +213,20 @@ font-size:1rem;
 </head>
 
 <body>
+    <nav class="navbar">
+
+<div class="logo">
+Anand.dev
+</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
 
 <header>
 
@@ -223,7 +274,7 @@ About Me
 <p>
 I am a passionate DevOps and Cloud Engineer with hands-on experience in Azure, AWS, Docker, Kubernetes, Terraform, Linux, CI/CD pipelines, Prometheus and Grafana.
 
-I enjoy designing cloud infrastructure, automating deployments, implementing monitoring solutions and building scalable systems using modern DevOps practices.
+Additionally, I enjoy building web applications and integrating APIs to create practical real-world solutions such as a Foreign Currency Exchange Application.
 </p>
 
 </div>
@@ -252,6 +303,10 @@ Skills
 <div class="skill">Grafana</div>
 <div class="skill">Ansible</div>
 <div class="skill">Python</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">REST API</div>
 
 </div>
 
@@ -305,6 +360,25 @@ Implemented automated build, test and deployment workflows using Azure DevOps Pi
 Managed and deployed containerized applications using Kubernetes, Services, Ingress and Helm Charts.
 </p>
 
+</div><div class="card">
+
+<h3>Foreign Currency Exchange Application</h3>
+
+<p>
+Developed a real-time currency exchange web application using Exchange Rate API.
+
+Users can convert currencies instantly with live exchange rates and a responsive user interface.
+
+Tech Stack: HTML, CSS, JavaScript, REST API
+</p>
+
+<a
+href="https://github.com/anand-devops-01/currency-exchange-project"
+target="_blank"
+class="btn">
+View Project
+</a>
+
 </div>
 
 </div>
@@ -329,7 +403,7 @@ Certifications
 
 </section>
 
-<section>
+<section id="contact">
 
 <h2 class="section-title">
 Contact
@@ -337,8 +411,8 @@ Contact
 
 <div class="contact">
 
-<a href="anandzanke@gmail.com">
-📧 yourmail@gmail.com
+<a href="mailto:anandzanke@gmail.com">
+📧 anandzanke@gmail.com
 </a>
 
 <a
