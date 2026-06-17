@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | DevOps Engineer</title>
+
+<title>Anand Janke | DevOps & Cloud Engineer</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -31,6 +34,7 @@ background:linear-gradient(135deg,#0f172a,#1e293b);
 
 .hero h1{
 font-size:4rem;
+margin-bottom:10px;
 }
 
 .hero span{
@@ -38,19 +42,30 @@ color:#38bdf8;
 }
 
 .hero p{
-margin:20px 0;
 font-size:1.2rem;
 color:#cbd5e1;
+margin:10px 0;
+}
+
+.hero-buttons{
+margin-top:25px;
 }
 
 .btn{
 display:inline-block;
 padding:12px 25px;
+margin:5px;
 background:#38bdf8;
 color:#000;
 text-decoration:none;
-border-radius:8px;
+border-radius:10px;
 font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:translateY(-3px);
 }
 
 section{
@@ -63,6 +78,12 @@ margin-bottom:30px;
 color:#38bdf8;
 }
 
+.about{
+max-width:900px;
+font-size:1.1rem;
+color:#cbd5e1;
+}
+
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
@@ -72,139 +93,274 @@ gap:15px;
 .skill{
 background:#1e293b;
 padding:15px;
-border-radius:10px;
+border-radius:12px;
 text-align:center;
+transition:.3s;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.skill:hover{
+background:#38bdf8;
+color:#000;
+transform:scale(1.05);
 }
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:20px;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
-border-radius:12px;
+padding:25px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(56,189,248,.25);
 }
 
 .card h3{
+color:#38bdf8;
 margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5e1;
+}
+
+.certifications ul{
+padding-left:20px;
+}
+
+.certifications li{
+margin:10px 0;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+display:block;
+margin:15px 0;
+color:#38bdf8;
+text-decoration:none;
+font-size:1.1rem;
 }
 
 footer{
 text-align:center;
 padding:30px;
 background:#020617;
+color:#94a3b8;
 }
 
-.contact a{
-color:#38bdf8;
-text-decoration:none;
-display:block;
-margin:10px 0;
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
 }
+
+.hero p{
+font-size:1rem;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
+
 <div class="hero">
-<h1>Hi, I'm <span>Your Name</span></h1>
-<p>Aspiring DevOps Engineer | Cloud Enthusiast | Linux Administrator</p>
-<a href="#projects" class="btn">View Projects</a>
+
+<h1>Hi, I'm <span>Anand Janke</span></h1>
+
+<p>DevOps & Cloud Engineer</p>
+
+<p>
+Azure • AWS • Docker • Kubernetes • Terraform • Azure DevOps • Linux
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="resume.pdf" class="btn">
+Download Resume
+</a>
+
+<a
+href="https://github.com/anand-devops-01"
+target="_blank"
+class="btn">
+GitHub
+</a>
+
 </div>
+
+</div>
+
 </header>
 
-<section>
-<h2 class="section-title">About Me</h2>
+<section id="about">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="about">
+
 <p>
-I am a passionate DevOps Engineer focused on automation,
-CI/CD pipelines, Docker, Kubernetes, Linux and Cloud
-technologies. I enjoy building scalable and reliable
-infrastructure solutions.
+I am a passionate DevOps and Cloud Engineer with hands-on experience in Azure, AWS, Docker, Kubernetes, Terraform, Linux, CI/CD pipelines, Prometheus and Grafana.
+
+I enjoy designing cloud infrastructure, automating deployments, implementing monitoring solutions and building scalable systems using modern DevOps practices.
 </p>
+
+</div>
+
 </section>
 
-<section>
-<h2 class="section-title">Skills</h2>
+<section id="skills">
+
+<h2 class="section-title">
+Skills
+</h2>
 
 <div class="skills">
+
+<div class="skill">Azure</div>
+<div class="skill">AWS</div>
 <div class="skill">Linux</div>
 <div class="skill">Docker</div>
 <div class="skill">Kubernetes</div>
-<div class="skill">AWS</div>
 <div class="skill">Terraform</div>
+<div class="skill">Azure DevOps</div>
 <div class="skill">Jenkins</div>
-<div class="skill">Git & GitHub</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">Prometheus</div>
+<div class="skill">Grafana</div>
 <div class="skill">Ansible</div>
-<div class="skill">Shell Scripting</div>
 <div class="skill">Python</div>
-<div class="skill">CI/CD</div>
-<div class="skill">Monitoring</div>
+
 </div>
+
 </section>
 
 <section id="projects">
-<h2 class="section-title">Projects</h2>
+
+<h2 class="section-title">
+Projects
+</h2>
 
 <div class="projects">
 
 <div class="card">
-<h3>CI/CD Pipeline with Jenkins</h3>
+
+<h3>Azure E2E Monitoring Lab</h3>
+
 <p>
-Created automated build, test and deployment pipeline
-using Jenkins and Docker.
+Designed and deployed a secure monitoring platform using Azure Bastion, Ubuntu VM, Docker, Prometheus, Grafana and Node Exporter.
+
+Implemented real-time monitoring for CPU, Memory, Disk, Network and System Health metrics.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Kubernetes Cluster Deployment</h3>
+
+<h3>Terraform Azure Infrastructure</h3>
+
 <p>
-Deployed scalable applications using Kubernetes and Helm.
+Provisioned Azure Resource Groups, Virtual Networks, Subnets, Network Security Groups, Virtual Machines and Azure Bastion using Infrastructure as Code (Terraform).
 </p>
+
 </div>
 
 <div class="card">
-<h3>AWS Infrastructure Automation</h3>
+
+<h3>Azure DevOps CI/CD Pipeline</h3>
+
 <p>
-Provisioned EC2, VPC and S3 resources using Terraform.
+Implemented automated build, test and deployment workflows using Azure DevOps Pipelines, GitHub and Docker.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Monitoring Stack</h3>
+
+<h3>Kubernetes Application Deployment</h3>
+
 <p>
-Implemented Prometheus and Grafana for infrastructure
-monitoring and alerting.
+Managed and deployed containerized applications using Kubernetes, Services, Ingress and Helm Charts.
 </p>
+
 </div>
 
 </div>
+
 </section>
 
-<section>
-<h2 class="section-title">Certifications</h2>
+<section class="certifications">
+
+<h2 class="section-title">
+Certifications
+</h2>
+
 <ul>
+
+<li>Microsoft Azure Fundamentals (AZ-900)</li>
 <li>AWS Cloud Practitioner</li>
 <li>Docker Essentials</li>
 <li>Kubernetes Fundamentals</li>
 <li>Linux Administration</li>
+
 </ul>
+
 </section>
 
 <section>
-<h2 class="section-title">Contact</h2>
+
+<h2 class="section-title">
+Contact
+</h2>
 
 <div class="contact">
-<a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
-<a href="#">GitHub Profile</a>
-<a href="#">LinkedIn Profile</a>
+
+<a href="anandzanke@gmail.com">
+📧 yourmail@gmail.com
+</a>
+
+<a
+href="https://github.com/anand-devops-01"
+target="_blank">
+🐙 GitHub Profile
+</a>
+
+<a
+href="https://www.linkedin.com/in/anand-janke/"
+target="_blank">
+💼 LinkedIn Profile
+</a>
+
 </div>
+
 </section>
 
 <footer>
-© 2026 Your Name | DevOps Engineer
+
+© 2026 Anand Janke | DevOps & Cloud Engineer
+
 </footer>
 
 </body>
